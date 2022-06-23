@@ -4,12 +4,14 @@
   --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
+  --button-box-shadow: 1px 1px 5px rgba(161, 169, 242, 0.7);
+  --image-box-shadow: 1px 1px 5px rgb(196, 196, 196);
 }
 
 body {
   font-family: var(--default-font-family);
   color: var(--main-text-color);
-  line-height: 36px;
+  line-height: 1.7;
 }
 
 h1,
@@ -20,7 +22,7 @@ h5,
 h6 {
   font-family: var(--heading-font-family);
   color: #000;
-  font-family: 700;
+  font-weight: 700;
 }
 
 a {
@@ -34,7 +36,7 @@ p {
 .main-page {
   background: var(--secondary-color);
   text-align: center;
-  padding: 200px;
+  padding: 200px 0;
 }
 
 .main-page__title {
@@ -59,4 +61,91 @@ p {
   padding: 18px 46px;
   background: var(--primary-color);
   border-radius: 4px;
+  box-shadow: var(--button-box-shadow);
+  transition: all 0.2s;
+}
+
+.main-page__link:hover {
+  background: #000;
+  color: #fff;
+}
+
+.projects {
+  padding: 125px 0;
+}
+
+.top-text {
+  font-size: 18px;
+}
+
+.item-wrapper__title {
+  font-size: 64px;
+}
+
+.item-wrapper__text {
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0.7);
+}
+
+.image {
+  max-width: 100%;
+  box-shadow: var(--image-box-shadow);
+}
+
+.item-wrapper__link {
+  display: inline-block;
+  color: var(--primary-color);
+  padding: 15px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  box-shadow: var(--button-box-shadow);
+  transition: all 0.2s;
+}
+
+.item-wrapper__link:hover {
+  color: #000;
+  border: 1px solid #000;
+}
+
+@media (max-width: 1200px) {
+  .item-wrapper__title {
+    font-size: 50px;
+  }
+  .item-wrapper__text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-page__title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 563px) {
+  .main-page__title {
+    font-size: 42px;
+  }
+  .main-page__subtitle {
+    font-weight: 700;
+    font-size: 29px;
+  }
+  .main-page__text {
+    font-size: 18px;
+  }
+  .main-page__link {
+    padding: 11px 33px;
+  }
+  .top-text {
+    font-size: 14px;
+  }
+  .item-wrapper__title {
+    font-size: 35px;
+  }
 }
