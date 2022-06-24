@@ -129,6 +129,10 @@ p {
   font-size: 64px;
 }
 
+.contacts {
+  padding: 200px 0;
+}
+
 @media (max-width: 1200px) {
   .item-wrapper__title {
     font-size: 50px;
