@@ -78,13 +78,12 @@
       </div>
     </nav>
     <section class="main-page">
-      <div class="container">
+      <div class="overlay"></div>
+
+      <div class="container wow fade-in" data-wow-duration="3s">
         <h2 class="main-page__subtitle">Hi I am</h2>
         <h1 class="main-page__title">Hanna Leheza</h1>
         <p class="main-page__text mt-4">Frontend Developer, based in EU.</p>
-        <a class="main-page__link mt-5" href="/contact.html" title="Contact me"
-          >Contact me</a
-        >
       </div>
     </section>
 
@@ -132,11 +131,14 @@
     <footer class="footer">
       <div class="container">
         <div class="row footer__inner d-flex align-items-center">
-          <div class="col-md-6">
+          <div class="col-md-6 wow fade-in" data-wow-duration="3s">
             <h5 class="footer__title">Work Inquiry</h5>
             <p class="footer__text">Let's work together</p>
           </div>
-          <div class="footer__link col-md-6 mt-3">
+          <div
+            class="footer__link col-md-6 mt-3 wow fade-in"
+            data-wow-duration="3s"
+          >
             <a
               class="main-page__link"
               href="/contact.html"
@@ -169,5 +171,7 @@
         </p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
