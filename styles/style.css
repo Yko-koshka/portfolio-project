@@ -43,7 +43,8 @@ p {
 }
 
 .main-page__title,
-.item-wrapper__title {
+.item-wrapper__title,
+.works__title {
   font-family: var(--heading-font-family);
   font-size: 96px;
 }
@@ -120,6 +121,14 @@ p {
   max-width: 70%;
 }
 
+.works {
+  padding: 100px 0;
+}
+
+.works__title {
+  font-size: 64px;
+}
+
 @media (max-width: 1200px) {
   .item-wrapper__title {
     font-size: 50px;
@@ -145,6 +154,9 @@ p {
   .main-page__title {
     font-size: 70px;
   }
+  .works__title {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 563px) {
@@ -166,5 +178,8 @@ p {
   }
   .item-wrapper__title {
     font-size: 35px;
+  }
+  .works__title {
+    font-size: 27px;
   }
 }
